@@ -5,8 +5,7 @@
     {
       "fileMatch": ["(^|/)faults/.*/fault\\.ya?ml$"],
       "matchStrings": [
-        "image:\\s+\"(?<depName>litmuschaos\\.docker\\.scarf\\.sh/litmuschaos/[^\"]+):(?<currentValue>[^\"]+)\"",
-        "app\\.kubernetes\\.io/version:\\s+(?<currentValue>\\S+)"
+        "image:\\s+\"(?<depName>litmuschaos\\.docker\\.scarf\\.sh/litmuschaos/[^\"]+):(?<currentValue>[^\"]+)\""
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
