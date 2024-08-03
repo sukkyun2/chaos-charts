@@ -2,7 +2,7 @@ version: 2
 updates:
   - package-ecosystem: "docker"
     directories: 
-      - "/faults
+      - "/faults"
     schedule:
       interval: "daily"
     target-branch: "v3.8.x"
