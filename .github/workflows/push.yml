@@ -24,7 +24,7 @@ jobs:
           
       # Checkout to the latest commit
       # On specific directory/path
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           path: go/src/github.com/${{github.repository}}
           token: ${{ secrets.ADMIN_TOKEN }}
