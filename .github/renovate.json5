@@ -1,14 +1,15 @@
 {
   "extends": ["config:base"],
-  "baseBranches": ["v3.8.x"],
-  "regexManagers": [
+  "baseBranches": ["master"],
+  "customManagers": [
     {
+      "customType": "regex",
+      "description": "Update litmus chaos docker image references",
       "fileMatch": ["(^|/)faults/.*/fault\\.ya?ml$"],
       "matchStrings": [
         "image:\\s+\"(?<depName>litmuschaos\\.docker\\.scarf\\.sh/litmuschaos/[^\"]+):(?<currentValue>[^\"]+)\""
       ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "docker"
+      "datasourceTemplate": "docker"
     }
   ]
 }
