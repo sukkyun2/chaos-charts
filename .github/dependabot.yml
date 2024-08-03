@@ -1,0 +1,7 @@
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directories: "/faults/**/fault.yaml"
+    schedule:
+      interval: "daily"
+    target-branch: "v3.8.x"
